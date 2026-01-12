@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 Pacing Guide: Radians & The Unit Circle</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --highlight-bg: #fff3cd;
+            --no-school-bg: #e2e3e5;
+            --no-school-text: #6c757d;
+            --border-color: #dee2e6;
+            --header-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        .meta-info {
+            font-size: 1.1rem;
+            color: #555;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            background: #f1f3f5;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--header-bg);
+            color: var(--primary-color);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        /* Column Specific Widths for better layout */
+        .col-day { width: 5%; text-align: center; }
+        .col-date { width: 8%; white-space: nowrap; }
+        .col-topic { width: 15%; font-weight: 600; }
+        .col-obj { width: 20%; }
+        .col-vocab { width: 12%; font-style: italic; color: #555; }
+        .col-detail { width: 30%; }
+        .col-std { width: 10%; font-size: 0.9em; }
+
+        /* Row Styles */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f3f5;
+        }
+
+        .highlight {
+            background-color: var(--highlight-bg) !important;
+            border-left: 4px solid #ffc107;
+        }
+
+        .no-school {
+            background-color: var(--no-school-bg) !important;
+            color: var(--no-school-text);
+            font-style: italic;
+        }
+
+        .no-school td {
+            border-color: #ced4da;
+        }
+
+        /* Link Styles */
+        a.standard-link {
+            color: white;
+            background-color: var(--accent-color);
+            padding: 4px 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85em;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+
+        a.standard-link:hover {
+            background-color: #2980b9;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body { padding: 0; max-width: 100%; }
+            a.standard-link { color: black; background: none; text-decoration: underline; padding: 0; }
+            .no-school { background-color: #eee !important; -webkit-print-color-adjust: exact; }
+            .highlight { background-color: #fff3cd !important; -webkit-print-color-adjust: exact; }
+            th { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            th, td { padding: 8px; font-size: 0.9rem; }
+            .col-vocab, .col-std { display: none; } /* Hide less critical columns on small screens */
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Unit 1: Radians & The Unit Circle</h1>
+        <div class="meta-info">
+            <span class="meta-item">📅 Jan 14 – Feb 2, 2026</span>
+            <span class="meta-item">⏱️ 12 Instructional Days</span>
+            <span class="meta-item">🎯 Goal: Degrees ➝ Radians</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Daily Pacing Guide</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-day">Day</th>
+                    <th class="col-date">Date</th>
+                    <th class="col-topic">Topic</th>
+                    <th class="col-obj">Objective</th>
+                    <th class="col-vocab">Vocabulary</th>
+                    <th class="col-detail">Instructional Detail</th>
+                    <th class="col-std">Standards</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-day">1</td>
+                    <td class="col-date">Wed 1/14</td>
+                    <td class="col-topic">Fluency: Fractions & Pi</td>
+                    <td>Simplify rational expressions involving Pi and define a radian visually.</td>
+                    <td>Radian, Radius, Pi, Circumference, Ratio</td>
+                    <td><strong>Preloading:</strong> 15 mins on fraction ops.<br><strong>Activity:</strong> String activity (visual definition of 1 radian).</td>
+                    <td>HSG-C.B.5</td>
+                </tr>
+                <tr>
+                    <td class="col-day">2</td>
+                    <td class="col-date">Thu 1/15</td>
+                    <td class="col-topic">Degrees ↔ Radians</td>
+                    <td>Convert between degrees and radians using dimensional analysis.</td>
+                    <td>Dimensional Analysis, Conversion Factor, Degree</td>
+                    <td>Identity ratio ($\frac{\pi}{180}$); Teach calculator skills (DRG button); Treat "Degree" as a unit.</td>
+                    <td>HSG-C.B.5</td>
+                </tr>
+                <tr>
+                    <td class="col-day">3</td>
+                    <td class="col-date">Fri 1/16</td>
+                    <td class="col-topic">Coterminal & Reference Angles</td>
+                    <td>Identify standard position angles and find coterminal angles within $[0, 2\pi)$.</td>
+                    <td>Standard Position, Coterminal, Reference Angle</td>
+                    <td>Spiral drawing for $>360^\circ$; "Bowtie" concept for reference triangles; <strong>Always reference x-axis.</strong></td>
+                    <td>F-TF.A.1<br>F-TF.A.2</td>
+                </tr>
+                <tr class="no-school">
+                    <td class="col-day">--</td>
+                    <td class="col-date">Mon 1/19</td>
+                    <td class="col-topic">NO SCHOOL</td>
+                    <td colspan="4">Martin Luther King Jr. Day</td>
+                </tr>
+                <tr>
+                    <td class="col-day">4</td>
+                    <td class="col-date">Tue 1/20</td>
+                    <td class="col-topic">Quiz 1 & Arc Length</td>
+                    <td><strong>Start with Quiz 1 (20 mins).</strong> Then, calculate arc length using $s=r\theta$.</td>
+                    <td>Arc Length (s), Central Angle, Theta, Constraint</td>
+                    <td>Assess Days 1-3. Then teach Arc Length.<br><strong>Golden Rule:</strong> $\theta$ MUST be in radians.</td>
+                    <td>HSG-C.B.5</td>
+                </tr>
+                <tr>
+                    <td class="col-day">5</td>
+                    <td class="col-date">Wed 1/21</td>
+                    <td class="col-topic">Sector Area (Pizza Problems)</td>
+                    <td>Calculate sector area and compare value (area per dollar).</td>
+                    <td>Sector, Area, Square Units, Ratio</td>
+                    <td>Pizza Problem (1 Large vs 2 Medium); Formula $A = \frac{1}{2}r^2\theta$.</td>
+                    <td>HSG-C.B.5<br>HSG-MG.A.1</td>
+                </tr>
+                <tr>
+                    <td class="col-day">6</td>
+                    <td class="col-date">Thu 1/22</td>
+                    <td class="col-topic">Apps: Irrigation & Clocks</td>
+                    <td>Apply circular concepts to constrained physical systems.</td>
+                    <td>Angular Velocity, Radius of Rotation, Path</td>
+                    <td><strong>Combined Lesson:</strong> Solve 1 Irrigation problem (Arc Length) and 1 Clock problem (Speed) together.</td>
+                    <td>HSG-MG.A.3<br>HSG-MG.A.1</td>
+                </tr>
+                <tr>
+                    <td class="col-day">7</td>
+                    <td class="col-date">Fri 1/23</td>
+                    <td class="col-topic">Unit Circle: The Angles</td>
+                    <td>Build Unit Circle angles using counting patterns (families).</td>
+                    <td>Unit Circle, Families of Angles</td>
+                    <td>Counting patterns ($\frac{\pi}{6}, \frac{\pi}{4}$) instead of memorizing; Highlighting "Bowties".</td>
+                    <td>F-TF.A.2</td>
+                </tr>
+                <tr class="highlight">
+                    <td class="col-day">8</td>
+                    <td class="col-date">Mon 1/26</td>
+                    <td class="col-topic">Quiz 2 (Min Day)</td>
+                    <td><strong>Mid-Unit Assessment:</strong> Arc Length, Sector Area, and Real-world Apps.</td>
+                    <td>Assessment of Week 2 Vocabulary</td>
+                    <td><strong>Minimum Day Strategy:</strong> Use the shortened period for Quiz 2. No new lecture.</td>
+                    <td>HSG-C.B.5<br>HSG-MG.A.1</td>
+                </tr>
+                <tr>
+                    <td class="col-day">9</td>
+                    <td class="col-date">Tue 1/27</td>
+                    <td class="col-topic">Unit Circle: Coordinates</td>
+                    <td>Connect Special Right Triangles to $(x,y)$ coordinates.</td>
+                    <td>Coordinate Pair, Sine, Cosine, Hypotenuse</td>
+                    <td>Hypotenuse=1 implies Legs=Coords; Left Hand Rule for Sine/Cosine.</td>
+                    <td>F-TF.A.2</td>
+                </tr>
+                <tr>
+                    <td class="col-day">10</td>
+                    <td class="col-date">Wed 1/28</td>
+                    <td class="col-topic">Fluency & Drills</td>
+                    <td>Drill exact value retrieval (speed and accuracy).</td>
+                    <td>ASTC, Quadrantal Angles</td>
+                    <td><strong>Practice Day:</strong> Drills on finding $\sin(\frac{\pi}{3})$, $\cos(\pi)$, etc. quickly. Focus on signs (+/-).</td>
+                    <td>F-TF.A.2</td>
+                </tr>
+                <tr>
+                    <td class="col-day">11</td>
+                    <td class="col-date">Thu 1/29</td>
+                    <td class="col-topic">Unit Review Stations</td>
+                    <td>Carousel activity reviewing all unit concepts.</td>
+                    <td>Comprehensive Review</td>
+                    <td>Stations: Conversions, Pizza/Clock Word Problems, Find the Error.</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td class="col-day">12</td>
+                    <td class="col-date">Fri 1/30</td>
+                    <td class="col-topic">Summative Assessment</td>
+                    <td>Comprehensive Unit Test.</td>
+                    <td>--</td>
+                    <td>30% Conversions, 30% Applications, 40% Unit Circle Coordinates.</td>
+                    <td>All</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Standards & Coherence Map</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 15%">Standard</th>
+                    <th style="width: 30%">Official Description</th>
+                    <th style="width: 35%">Teacher Friendly Explanation</th>
+                    <th style="width: 20%">Coherence Map</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>HSG-C.B.5</strong></td>
+                    <td>Derive using similarity that arc length is proportional to radius... define radian measure... derive sector area formula.</td>
+                    <td><strong>The Core Formulas:</strong> The math behind Day 5 & 6. Why we use Radians and the derivation of $s = r\theta$ and Area = $\frac{1}{2}r^2\theta$.</td>
+                    <td><a href="https://tools.achievethecore.org/coherence-map/HS/G/106/586/586" target="_blank" class="standard-link">View HSG-C.B.5 Map</a></td>
+                </tr>
+                <tr>
+                    <td><strong>F-TF.A.1</strong></td>
+                    <td>Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle.</td>
+                    <td><strong>What is a Radian?</strong> Focus of Day 1. Moving from 360 degrees to 1 radian = 1 radius distance.</td>
+                    <td><a href="https://tools.achievethecore.org/coherence-map/HS/119/566/566" target="_blank" class="standard-link">View F-TF.A.1 Map</a></td>
+                </tr>
+                <tr>
+                    <td><strong>F-TF.A.2</strong></td>
+                    <td>Explain how the unit circle in the coordinate plane enables extension of trigonometric functions to all real numbers.</td>
+                    <td><strong>The Unit Circle Coordinates:</strong> Days 9 & 10. Turning triangles into grid coordinates. Why $(x,y)$ becomes $(\cos, \sin)$.</td>
+                    <td><a href="https://tools.achievethecore.org/coherence-map/HS/119/567/567" target="_blank" class="standard-link">View F-TF.A.2 Map</a></td>
+                </tr>
+                <tr>
+                    <td><strong>HSG-MG.A.1</strong></td>
+                    <td>Use geometric shapes, their measures, and their properties to describe objects.</td>
+                    <td><strong>Modeling:</strong> Justifying why a pizza slice is a "perfect sector" or a clock is a "perfect circle" for math purposes.</td>
+                    <td><a href="https://tools.achievethecore.org/coherence-map/HS/G/112/604/604" target="_blank" class="standard-link">View HSG-MG.A.1 Map</a></td>
+                </tr>
+                <tr>
+                    <td><strong>HSG-MG.A.3</strong></td>
+                    <td>Apply geometric methods to solve design problems (e.g., constraints, minimizing cost).</td>
+                    <td><strong>Optimization:</strong> The "Irrigation" and "Pizza Value" problems. Using formulas to make a decision (cost/efficiency).</td>
+                    <td><a href="https://tools.achievethecore.org/coherence-map/HS/G/112/606/606" target="_blank" class="standard-link">View HSG-MG.A.3 Map</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer style="margin-top: 50px; text-align: center; color: #777; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 20px;">
+        <p>Unit 1 Pacing | Spring 2026</p>
+    </footer>
+
+</body>
+</html>
